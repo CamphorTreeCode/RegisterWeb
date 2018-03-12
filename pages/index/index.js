@@ -13,14 +13,14 @@ Page({
     ] ,
     //功能区域  
     functionImg: [
-      { url:"/img/工商注册@2x.png"},
-      { url:"/img/代理记账@2x.png"},
-      { url: "/img/贷款@2x.png" },
-      { url: "/img/网站建站@2x.png" },
-      { url: "/img/商标专利@2x.png" },
-      { url: "/img/宣传推广@2x.png" },
-      { url: "/img/工商注册@2x.png" },
-      { url: "/img/增值服务@2x.png" },
+      { name: "工商注册", url:"/img/gszhuce@2x.png"},
+      { name: "代理记账", url:"/img/dailijizhang@2x.png"},
+      { name: "代办资质", url: "/img/myMoney@2x.png" },
+      { name: "网站建站", url: "/img/webOpen@2x.png" },
+      { name: "商标专利", url: "/img/shopLogo@2x.png" },
+      { name: "宣传推广", url: "/img/xuanchuantuiguang@2x.png" },
+      { name: "小程序开发", url: "/img/xcxkf@2x.png" },
+      { name: "增值服务", url: "/img/zzfw@2x.png" },
     ]
   },
 

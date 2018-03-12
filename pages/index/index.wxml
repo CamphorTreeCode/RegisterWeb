@@ -15,11 +15,20 @@
   <image src="{{item.url}}"></image>
   </view>
   <view class="oneFunctionsTitle">
-    工商注册
+    {{item.name}}
   </view>
   </view>
 </view>
   <!--功能区域  end-->
 <!-- 最新公告 start -->
+<view class="notice">
+    <view class="noticeTitle">
+    <view class="noticeName">最新公告</view>
+     <view class="infobiaoti">Latest New</view>
+    </view>
 
+    <view class="InfoImg">
+       <image src=""></image>
+    </view>
+</view>
 <!-- 最新公告 end -->

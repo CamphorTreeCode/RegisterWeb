@@ -1,27 +1,77 @@
+ page{
+   background: #EEEEEE;
+ }
+/*轮播图  */
 .slide-image {
   height: 100%;
   width: 100%;
 }
-
+/*功能区域  */
 .functions{
-border: 1rpx solid red;
-height: 260rpx
+height:350rpx;
+background:#fff;
+padding-top:1.8%;
+padding-bottom:1%;
+
 }
 .functions .oneFunctions{
-  width: 24%;
-  height: 100rpx;
+  width: 24.6%;
+  height: 49%;
 
 }
 .functionImg{
-  height: 80%;
-  width: 100%;
-    border: 1rpx solid red;
+height:62%;
+width:100%;
+ border: 1rpx solid #fff;
+
 }
 .functions .oneFunctions image{
-  width: 100%;
-  height: 100%;
+width:45%;
+height:74%;
+display:block;
+margin:0 auto;
+margin-top:10%;
+
+
 }
 .oneFunctionsTitle{
-  font-size: 1rem;
+  font-size: 0.75rem;
+  height: 30%;
+  width: 100%;
+
+  text-align: center;
+  color: #5E5E5E;
 }
 
+/*最新公告  */
+.notice{
+  height: 200rpx;
+  border: 1rpx solid red;
+  background: #fff;
+  margin-top: 1.6%;
+}
+.noticeTitle{
+  height: 90rpx;
+
+  
+  margin-left:4%;
+margin-top:5%;
+}
+.noticeName{
+  color: #444;
+  font-weight: bold;
+}
+.infobiaoti{
+  color: #ADADAD;
+  font-size: 0.78rem;
+}
+.InfoImg{
+ border: 1rpx solid red;
+ height: 400rpx;
+
+}
+.InfoImg image{
+width: 45%;
+height: 100%;
+border: 1rpx solid red;
+}

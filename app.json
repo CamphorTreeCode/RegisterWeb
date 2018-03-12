@@ -14,33 +14,33 @@
    "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "color": "#818181",
-    "selectedColor": "#FFD95E",
+    "color": "#A3A3A3",
+    "selectedColor": "#329EDE",
     "borderStyle": "white",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/img/首页@2x.png",
+      "selectedIconPath": "/img/selectHome.png"
       },
       {
         "pagePath": "pages/index/index",
-        "text": "直投大厅",
-          "iconPath": "",
-          "selectedIconPath": ""
+        "text": "注册公司",
+        "iconPath": "/img/注册公司@2x.png",
+        "selectedIconPath": "/img/注册公司（选中状态）@2x.png"
       },
       {
         "pagePath": "pages/index/index",
-        "text": "附件的商家",
-          "iconPath": "",
-          "selectedIconPath": ""
+        "text": "联系我们",
+        "iconPath": "/img/我要贷款@2x.png",
+        "selectedIconPath": "/img/我要贷款（选中状态）@2x.png"
       },
       {
-        "pagePath": "pages/index/index",
-        "text": "我",
-       "iconPath": "",
-      "selectedIconPath": ""
+      "pagePath": "pages/index/index",
+      "text": "关于我们",
+      "iconPath": "/img/用户@2x.png",
+      "selectedIconPath": "/img/关于我们（选中状态）@2x.png"
       }
     ]
   }
