@@ -8,6 +8,10 @@
     </block>
   </swiper>
   <!--轮播图 end  -->
-<view class="img">
-  <view></view>
+  <!--功能区域  start-->
+<view class="functions">
+  <view class="oneFunctions">
+  <image src=""></image>
+  </view>
 </view>
+  <!--功能区域  end-->
