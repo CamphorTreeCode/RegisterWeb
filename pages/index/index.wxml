@@ -1,0 +1,13 @@
+
+  <!--轮播图 start  -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-active-color="#fff">
+    <block wx:for="{{movies}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--轮播图 end  -->
+<view class="img">
+  <view></view>
+</view>
