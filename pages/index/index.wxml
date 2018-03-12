@@ -10,8 +10,16 @@
   <!--轮播图 end  -->
   <!--功能区域  start-->
 <view class="functions">
-  <view class="oneFunctions">
-  <image src=""></image>
+  <view class="oneFunctions lf" wx:for="{{functionImg}}">
+  <view class="functionImg">
+  <image src="{{item.url}}"></image>
+  </view>
+  <view class="oneFunctionsTitle">
+    工商注册
+  </view>
   </view>
 </view>
   <!--功能区域  end-->
+<!-- 最新公告 start -->
+
+<!-- 最新公告 end -->

@@ -15,12 +15,12 @@ Page({
     functionImg: [
       { url:"/img/工商注册@2x.png"},
       { url:"/img/代理记账@2x.png"},
-      { url: "/img/贷款@2x.png.png" },
+      { url: "/img/贷款@2x.png" },
       { url: "/img/网站建站@2x.png" },
       { url: "/img/商标专利@2x.png" },
       { url: "/img/宣传推广@2x.png" },
       { url: "/img/工商注册@2x.png" },
-      { url: "/img/代理记账@2x.png" },
+      { url: "/img/增值服务@2x.png" },
     ]
   },
 
