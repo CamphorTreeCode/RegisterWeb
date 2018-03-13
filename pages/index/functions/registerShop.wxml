@@ -1,0 +1,25 @@
+<!--pages/index/functions/registerShop.wxml-->
+<!--图片区域  -->
+<view class="functionImg" >
+ <image src="/img/functionImg/gongshang.jpg">
+    
+ </image>
+</view>
+<!--介绍内容  -->
+<view class="functionContent">
+ <view class="functionHead">
+  <view class="functionHeadImg lf">
+  <image src="/img/shopRegs.png"></image>
+  </view>
+  <view class="functionHeadTitle lf">工商注册</view>
+ </view>
+</view>
+<!--联系电话  -->
+<view class="contactNumber">
+ <view class="functionHead">
+  <view class="functionHeadImg lf">
+  <image src="/img/shopRegs.png"></image>
+  </view>
+    <view class="functionHeadTitle lf">联系dianh</view>
+  </view>
+</view>

@@ -45,13 +45,13 @@ margin-top:10%;
 
 /*最新公告  */
 .notice{
-  height: 200rpx;
-  border: 1rpx solid red;
+
+  border: 1rpx solid #fff;
   background: #fff;
   margin-top: 1.6%;
 }
 .noticeTitle{
-  height: 90rpx;
+
 
   
   margin-left:4%;
@@ -66,12 +66,18 @@ margin-top:5%;
   font-size: 0.78rem;
 }
 .InfoImg{
- border: 1rpx solid red;
- height: 400rpx;
+
+ margin-top: 1%;
 
 }
 .InfoImg image{
-width: 45%;
-height: 100%;
-border: 1rpx solid red;
+width:44%;
+height:180rpx;
+background:#EEEEEE;
+margin-left:4%;
+border-radius:10%;
+margin-bottom:2.5%;
+
+
+
 }

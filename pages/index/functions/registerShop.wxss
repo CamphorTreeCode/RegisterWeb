@@ -1,0 +1,29 @@
+/* pages/index/functions/registerShop.wxss */
+.functionImg{
+  border: 1rpx solid red;
+  height: 350rpx;
+  
+}
+.functionImg image{
+  height: 100%;
+  width: 100%;
+}
+.functionContent{
+  border: 1rpx solid red;
+  height: 550rpx;
+
+}
+.functionHead{
+  height: 20%;
+  border: 1rpx solid red;
+}
+.functionHeadImg{
+  width: 20%;
+  border: 1rpx solid red;
+  height: 100%;
+
+}
+.functionHeadImg image{
+  width: 100%;
+  height: 100%;
+}

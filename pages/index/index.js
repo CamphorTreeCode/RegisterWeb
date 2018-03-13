@@ -21,7 +21,9 @@ Page({
       { name: "宣传推广", url: "/img/xuanchuantuiguang@2x.png" },
       { name: "小程序开发", url: "/img/xcxkf@2x.png" },
       { name: "增值服务", url: "/img/zzfw@2x.png" },
-    ]
+    ],
+    //最新公告
+    infoArr:[1,2,3,4]
   },
 
   /**
@@ -78,5 +80,18 @@ Page({
    */
   onShareAppMessage: function () {
     
+  },
+  // 功能区域跳转到页面
+  JumpFunctions(e){
+  console.log(e,e.currentTarget.id);
+    var id = e.currentTarget.id
+    switch (id){
+      case "0": 
+      wx.navigateTo({
+        url: '/pages/index/functions/registerShop',
+      }) 
+      break; 
+    }
+
   }
 })

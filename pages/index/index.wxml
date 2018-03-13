@@ -10,7 +10,7 @@
   <!--轮播图 end  -->
   <!--功能区域  start-->
 <view class="functions">
-  <view class="oneFunctions lf" wx:for="{{functionImg}}">
+  <view class="oneFunctions lf" wx:for="{{functionImg}}" catchtap='JumpFunctions' id="{{index}}">
   <view class="functionImg">
   <image src="{{item.url}}"></image>
   </view>
@@ -27,8 +27,8 @@
      <view class="infobiaoti">Latest New</view>
     </view>
 
-    <view class="InfoImg">
-       <image src=""></image>
+    <view class="InfoImg" >
+       <image src="" wx:for="{{infoArr}}"></image>
     </view>
 </view>
 <!-- 最新公告 end -->
