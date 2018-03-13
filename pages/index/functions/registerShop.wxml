@@ -1,8 +1,7 @@
 <!--pages/index/functions/registerShop.wxml-->
 <!--图片区域  -->
 <view class="functionImg" >
- <image src="/img/functionImg/gongshang.jpg">
-    
+ <image src="{{functionImg[indexs].url}}">   
  </image>
 </view>
 <!--介绍内容  -->
@@ -11,15 +10,40 @@
   <view class="functionHeadImg lf">
   <image src="/img/shopRegs.png"></image>
   </view>
-  <view class="functionHeadTitle lf">工商注册</view>
+  <view class="functionHeadTitle lf">{{value}}</view>
+ </view>
+ <view class="functionInfoContent">
+ <view class="contentText" wx:for="{{content[indexs]}}">
+ 
+<span class="contextTitle">{{item.title}}</span>
+<text>
+{{item.text}}
+</text>
+
+</view>
  </view>
 </view>
 <!--联系电话  -->
 <view class="contactNumber">
  <view class="functionHead">
   <view class="functionHeadImg lf">
-  <image src="/img/shopRegs.png"></image>
+  <image src="/img/phone@2x.png"></image>
   </view>
-    <view class="functionHeadTitle lf">联系dianh</view>
+    <view class="functionHeadTitle lf">联系电话</view>
+  </view>
+  <view class="contactPhone cl">
+     13524012018
+  </view>
+  <!--注意事项  -->
+  <view class="warnInfo">
+     <view class="halfLeft lf" ></view>
+     <view class="warnInfoImg lf">
+      <view class="weiyi">
+    
+       <image class="imgleft lf"src="/img/warn@2x.png"></image>
+    <view class='warnContent lf'>此提示或注意事项</view>
+    </view>
+     </view>
+    <view class="halfRight lf"></view>
   </view>
 </view>

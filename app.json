@@ -3,7 +3,6 @@
     "pages/index/index",
     "pages/aboutUs/aboutUs",
     "pages/index/functions/registerShop"
-
   ],
   "window":{
   "backgroundTextStyle":"light",

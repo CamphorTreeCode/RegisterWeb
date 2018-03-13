@@ -10,7 +10,7 @@
   <!--轮播图 end  -->
   <!--功能区域  start-->
 <view class="functions">
-  <view class="oneFunctions lf" wx:for="{{functionImg}}" catchtap='JumpFunctions' id="{{index}}">
+  <view class="oneFunctions lf" wx:for="{{functionImg}}" catchtap='JumpFunctions' id="{{index}}" data-value="{{item.name}}">
   <view class="functionImg">
   <image src="{{item.url}}"></image>
   </view>

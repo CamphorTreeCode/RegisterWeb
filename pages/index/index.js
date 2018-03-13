@@ -83,15 +83,13 @@ Page({
   },
   // 功能区域跳转到页面
   JumpFunctions(e){
-  console.log(e,e.currentTarget.id);
+  console.log(e,e.currentTarget.id,e.currentTarget.dataset.value);
     var id = e.currentTarget.id
-    switch (id){
-      case "0": 
+    var value = e.currentTarget.dataset.value
       wx.navigateTo({
-        url: '/pages/index/functions/registerShop',
+        url: '/pages/index/functions/registerShop?indexs='+id+"&value="+value,
       }) 
-      break; 
-    }
+
 
   }
 })
