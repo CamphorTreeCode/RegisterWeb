@@ -12,7 +12,7 @@ input{ line-height: 80rpx; height: 80rpx;}
 .remarkName .textarea textarea{ line-height: 80rpx; height: 160rpx; width:100%;}
 .registeredCapital{ position: relative;}
 .registeredCapital .saveInput{ float: left;}
-.registeredCapital .w{ position: absolute; top: 0%; right: 5%; font-size: 24rpx; color: #CCC}
+.registeredCapital .w{ position: absolute; top: 0%; right: 5%; font-size: 24rpx; color: #CCC; border: 1px solid #333}
 .foot{ height: 200rpx; position: relative; background-color: #F2F2F2;}
 #submit{ width: 80%; position:absolute; bottom: 20%; left: 10%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 36rpx;}
 .pcss{ font-size: 24rpx; color: #CCC; margin-top:3rpx;}

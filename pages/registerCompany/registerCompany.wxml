@@ -22,7 +22,7 @@
          </view>
        </view>
     </view>
-    <view class='clear'></view>
+    <view class='clear'>  </view>
     <view class='registeredCapital'>
        <view class='title'>注册资本：</view>
        <view class='saveInput'><input type='text'></input>
