@@ -1,6 +1,6 @@
 <!--pages/companyShareholder/companyShareholder.wxml-->
 <view id='blank'></view>
-<view id='head' bindtap='addShareholder' data-value='+'>公司股东<view class='img' style='background-image: url({{addShareholderIcon}});'></view></view>
+<view id='head' bindtap='addShareholder' data-value='+'>公司股东<image class="img" src="{{imggd}}"></image></view>
 <view class='shareholderList' >
     <view class='slicerLine'></view>
     <view class='shareholder'><view class='img' style='background:red'>

@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    addShareholderIcon:'https://s14.postimg.org/rc78jmj4h/image.png',
+    imggd:'/img/add@2x.png',
     // 显示表单
     showFrom:false,
   },
@@ -29,14 +29,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    console.info(app.globalData.addShareholderIcon)
-    console.log(">>>>")
 
-      this.setData({
-        addShareholderIcon: app.globalData.addShareholderIcon,
-        showFrom: false
-      });
-    
  
   },
 
@@ -79,12 +72,12 @@ Page({
      console.log(">>>>>3242")
      if (this.data.showFrom) {
        this.setData({
-         addShareholderIcon: app.globalData.addShareholderIcon,
+         imggd: '/img/add@2x.png',
          showFrom: false
        });
      } else {
        this.setData({
-         addShareholderIcon: app.globalData.addShareholderIcon,
+         imggd: "/img/jian@2x.png",
          showFrom: true
        });
      }
