@@ -6,7 +6,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    addShareholderIcon:'',
+    addShareholderIcon:'https://s14.postimg.org/rc78jmj4h/image.png',
+    // 显示表单
+    showFrom:false,
   },
 
   /**
@@ -28,9 +30,14 @@ Page({
    */
   onShow: function () {
     console.info(app.globalData.addShareholderIcon)
-    this.setData({
-      addShareholderIcon: app.globalData.addShareholderIcon
-    });
+    console.log(">>>>")
+
+      this.setData({
+        addShareholderIcon: app.globalData.addShareholderIcon,
+        showFrom: false
+      });
+    
+ 
   },
 
   /**
@@ -69,6 +76,19 @@ Page({
   },
   addShareholder:function(e){
      console.info(e.currentTarget.dataset.value)
+     console.log(">>>>>3242")
+     if (this.data.showFrom) {
+       this.setData({
+         addShareholderIcon: app.globalData.addShareholderIcon,
+         showFrom: false
+       });
+     } else {
+       this.setData({
+         addShareholderIcon: app.globalData.addShareholderIcon,
+         showFrom: true
+       });
+     }
+
   }
 
 })

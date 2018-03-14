@@ -6,7 +6,7 @@
     <view class='shareholder'><view class='img' style='background:red'>
     </view><view class='shareholderName'>张三</view></view>
 </view>
-<view id='form'>
+<view id='form'  class="navigator-box {{showFrom ? 'navigator-box-show' : ''}}" >
     <view>
         <view class='title'>股东1姓名：</view>
        <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>

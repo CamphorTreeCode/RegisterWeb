@@ -62,5 +62,15 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  phone() {
+    wx.makePhoneCall({
+      phoneNumber: '13524012018' //仅为示例，并非真实的电话号码
+    })
+  },
+  phones(){
+    wx.makePhoneCall({
+      phoneNumber: '021-37653130' //仅为示例，并非真实的电话号码
+    })
   }
 })

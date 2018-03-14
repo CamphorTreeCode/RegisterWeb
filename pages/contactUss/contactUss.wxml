@@ -10,7 +10,7 @@
    <view class="fixedlineText lf">
     固号
      </view>
-   <view class="fixedlineNumber ri">
+   <view class="fixedlineNumber ri" catchtap='phones'>
      021-37653130
    </view>
   </view>
@@ -24,7 +24,7 @@
    <view class="fixedlineText lf">
     电话
      </view>
-   <view class="fixedlineNumber ri">
+   <view class="fixedlineNumber ri" catchtap='phone'>
      13524012018
    </view>
   </view>
@@ -43,7 +43,7 @@
 <view class="oneitem ">
 
    <view class="fixedlineText addresstext lf">
- 上海市松江区广富林路699弄佳鸿大厦1513室
+ 上海市松江区广富林路699弄嘉鸿大厦1513室
      </view>
 
   </view>
