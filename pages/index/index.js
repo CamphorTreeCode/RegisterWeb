@@ -30,6 +30,18 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var p=this
+    wx.request({
+      url: 'http://localhost:8080/Maven_Project/notice/getnewnotice',
+      success: function (res) {
+        for (var i = 0; i < res.data.length;i++){
+          p.data.infoArr[i] = res.data[i].img
+        }
+
+        
+        console.info(p.data.infoArr)
+      }
+    })
     
   },
 

@@ -1,0 +1,12 @@
+/* pages/newNotice/newNotice.wxss */
+.top{ margin: 30rpx; font-size: 36rpx; color:#333;}
+.label{ font-size: 30rpx; color: #999; margin: 30rpx;}
+.label .type{ border: 1px solid #999; padding: 0 15rpx; border-radius: 1001px; margin-right: 10rpx;}
+.image{ overflow: hidden; margin: 30rpx; }
+.img{ width: 100%;} 
+.img image{ height: 450rpx; width: 100%;}
+.viewCount{ font-size: 24rpx; color: #333; float: right;}
+.viewCount image{ width:26rpx; height: 26rpx; vertical-align: middle; margin-right: 10rpx; margin-bottom: 5rpx;}
+.foot { margin: 30rpx;}
+.foot .title{ font-size: 30rpx; color:#333; margin-bottom:30rpx;}
+.foot .context{ font-size: 24rpx; color: #999; line-height: 60rpx;}

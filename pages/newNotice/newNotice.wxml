@@ -1,0 +1,28 @@
+<!--pages/newNotice/newNotice.wxml-->
+<view class='top'>
+工商注册流程
+</view>
+<view class='label'>
+  <view class='type,lf'>原创</view>
+  <view>2017.3.16  9：14</view>
+</view>
+<view class='image'>
+ <view class='img'>
+    <image src='/img/zhongjiantu.jpg '></image>
+ </view>
+ <view class='viewCount'>
+  <image src='/img/yan1.png'></image>1564
+ </view>
+</view>
+<view class='foot'>
+   <view class='title'>
+    玉先企业的优势：
+   </view>
+   <view class='context'>
+    1、权威的浓情为你期待你们去玩呢漂亮
+    2、权威的浓情为你期待你们去玩呢漂亮
+    3、权威的浓情为你期待你们去玩呢漂亮
+    4、权威的浓情为你期待你们去玩呢漂亮
+   </view>
+
+</view>
