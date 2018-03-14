@@ -1,0 +1,54 @@
+/* pages/contactUss/contactUss.wxss */
+.contactUsTop{
+  height: 400rpx;
+
+}
+.contactUsTop image{
+width:108%;
+height:100%;
+margin-left:-4%;
+
+}
+.oneitem{
+height: 90rpx;
+background: #fff;
+font-size: 0.9rem;
+}
+.martop{
+margin-top: 4%;
+}
+.fixedline{
+  height: 100%;
+  width:16%;
+}
+.fixedline image{
+width:42%;
+height:53%;
+margin-left:34%;
+margin-top:18%;
+
+
+}
+.fixedlineText{
+  color: #52AAE1;
+  font-size: 0.9rem;
+  line-height: 90rpx;
+}
+.fixedlineNumber{
+  color:#636363;
+  line-height: 90rpx;
+  font-size: 0.98rem;
+  margin-right: 2%;
+
+}
+.phoneNm{
+  margin-top:0.5%; 
+}
+.address{
+  background: none;
+}
+.addresstext{
+  margin-left:5%;
+
+  color:#414141;
+}

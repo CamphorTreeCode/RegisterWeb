@@ -2,13 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/aboutUs/aboutUs",
-    "pages/index/functions/registerShop"
+    "pages/index/functions/registerShop",
+    "pages/contactUss/contactUss"
+    
   ],
   "window":{
   "backgroundTextStyle":"light",
   "navigationBarBackgroundColor": "#1196DB",
   "navigationBarTitleText": "玉先注册公司代记账",
-   "navigationBarTextStyle": "white"
+  "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#A3A3A3",
@@ -28,15 +30,15 @@
         "selectedIconPath": "/img/注册公司（选中状态）@2x.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/contactUss/contactUss",
         "text": "联系我们",
-        "iconPath": "/img/我要贷款@2x.png",
-        "selectedIconPath": "/img/我要贷款（选中状态）@2x.png"
+        "iconPath": "/img/lianxiwomen.png",
+        "selectedIconPath": "/img/lianxiwomen2.png"
       },
       {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/aboutUs/aboutUs",
       "text": "关于我们",
-      "iconPath": "/img/用户@2x.png",
+      "iconPath": "/img/关于我们@2x.png",
       "selectedIconPath": "/img/关于我们（选中状态）@2x.png"
       }
     ]

@@ -1,0 +1,49 @@
+<!--pages/contactUss/contactUss.wxml-->
+<view class="contactUsTop">
+<image src="/img/sssss.webp"></image>
+</view>
+<view class="info">
+<view class="oneitem martop">
+  <view class="fixedline lf">
+  <image  src="/img/guhao.png"></image>
+  </view>
+   <view class="fixedlineText lf">
+    固号
+     </view>
+   <view class="fixedlineNumber ri">
+     021-37653130
+   </view>
+  </view>
+
+
+</view>
+<view class="oneitem phoneNm">
+  <view class="fixedline lf">
+  <image  src="/img/dianhua.png"></image>
+  </view>
+   <view class="fixedlineText lf">
+    电话
+     </view>
+   <view class="fixedlineNumber ri">
+     13524012018
+   </view>
+  </view>
+<!--详细地址  -->
+
+<view class="oneitem address">
+  <view class="fixedline lf">
+  <image  src="/img/dizhi.png"></image>
+  </view>
+   <view class="fixedlineText lf">
+  详细地址
+     </view>
+
+  </view>
+<!--地址  -->
+<view class="oneitem ">
+
+   <view class="fixedlineText addresstext lf">
+ 上海市松江区广富林路699弄佳鸿大厦1513室
+     </view>
+
+  </view>

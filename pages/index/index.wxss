@@ -27,7 +27,7 @@ width:100%;
 }
 .functions .oneFunctions image{
 width:45%;
-height:74%;
+height:77%;
 display:block;
 margin:0 auto;
 margin-top:10%;

@@ -26,7 +26,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -41,9 +41,15 @@
 					"query": ""
 				},
 				{
+					"id": 2,
+					"name": "关于我们",
+					"pathName": "pages/aboutUs/aboutUs",
+					"query": ""
+				},
+				{
 					"id": -1,
-					"name": "工商注册",
-					"pathName": "pages/index/index",
+					"name": "联系我们",
+					"pathName": "pages/contactUss/contactUss",
 					"query": ""
 				}
 			]

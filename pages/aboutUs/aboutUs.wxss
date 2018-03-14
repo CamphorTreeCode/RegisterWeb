@@ -1,1 +1,88 @@
 /* pages/aboutUs/aboutUs.wxss */
+.aboutUsHead{
+  background:#1196DB;
+  height: 450rpx;
+  position: relative
+}
+.aboutUsHead  .aboutUsHeadImg{
+  /* height: 100%;
+width: 100%; */
+height:133%;
+width:100%;
+margin-top:-20%;
+
+}
+.ProfileImg image{
+height:49%;
+width:56%;
+margin-top:30%;
+margin-left:46%;
+
+
+}
+.companyDetails{
+position:absolute;
+top:15%;
+left:15%;
+
+width:70%;
+margin:0 auto;
+display:block;
+height: 300rpx
+
+}
+.companyImg{
+
+  width: 33%;
+ height:54%;
+ margin:0 auto;
+
+}
+.companyImg image{
+
+  width:100%;
+  height: 100%;
+border-radius:50%;
+
+}
+.companyName{
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 6%;
+}
+.companyEnglishValue{
+    text-align: center;
+  color: #fff;
+  font-size: 0.7rem;
+  margin-top:1%;
+
+}
+.companyProfile{
+ height: 100rpx;
+
+}
+.ProfileImg{
+ height: 100%;
+
+ width: 11%;
+}
+.companyProfileDetails{
+ line-height: 100rpx;
+ font-size: 1rem;
+ color:#464646;
+ margin-left: 2%;
+}
+.phoneNumber{
+height:9%;
+width:13%;
+position:fixed;
+bottom:4%;
+left:43%;
+
+}
+.phoneNumber image{
+  width: 100%;
+  height: 100%;
+
+}

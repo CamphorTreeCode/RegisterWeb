@@ -81,7 +81,7 @@ Page({
      functionImg: [
        { url:'https://t1.picb.cc/uploads/2018/03/13/224Tdr.jpg'},
        { url:'https://s14.postimg.org/mi8s6la9d/daili.jpg'},
-       { url:'https://t1.picb.cc/uploads/2018/03/13/224LCJ.jpg'},
+       { url:'https://s14.postimg.org/49729mgsx/image.png'},
        { url:"https://t1.picb.cc/uploads/2018/03/13/224xpF.jpg"},
        { url:'https://t1.picb.cc/uploads/2018/03/13/224PgM.jpg'},
        { url: 'https://t1.picb.cc/uploads/2018/03/13/224ss1.jpg' },
