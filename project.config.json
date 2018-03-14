@@ -26,7 +26,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -51,6 +51,17 @@
 					"name": "联系我们",
 					"pathName": "pages/contactUss/contactUss",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "公司股东",
+					"pathName": "pages/companyShareholder/companyShareholder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "注册公司",
+					"pathName": "pages/registerCompany/registerCompany"
 				}
 			]
 		}

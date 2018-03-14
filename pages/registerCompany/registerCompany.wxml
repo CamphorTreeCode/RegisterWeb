@@ -8,7 +8,7 @@
     </view>
     <view class='remarkName'>
        <view class='title'>公司备选名称：</view>
-       <view class='textarea'><input  placeholder="请输入公司备选名称，最好两个，最少8个字" placeholder-class='pcss' type='text'></input></view>
+       <view class='textarea'><textarea  placeholder="请输入公司备选名称，最好两个，最少8个字" placeholder-class='ptcss' type='text'></textarea></view>
     </view>
 
 <view class='slicerLine'></view>
