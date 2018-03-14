@@ -13,7 +13,8 @@ input{ line-height: 80rpx; height: 80rpx;}
 .registeredCapital{ position: relative;}
 .registeredCapital .saveInput{ float: left;}
 .registeredCapital .w{ position: absolute; top: 0%; right: 5%; font-size: 24rpx; color: #CCC}
-#submit{ width: 80%; position: fixed; bottom: 2%; left: 10%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 36rpx;}
+.foot{ height: 200rpx; position: relative; background-color: #F2F2F2;}
+#submit{ width: 80%; position:absolute; bottom: 20%; left: 10%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 36rpx;}
 .pcss{ font-size: 24rpx; color: #CCC; margin-top:3rpx;}
 .ptcss{font-size: 24rpx; color: #CCC; margin-top:30rpx; }
 #chooseType{font-size: 24rpx; color: #CCC;  float: left}
