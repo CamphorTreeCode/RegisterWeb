@@ -3,7 +3,14 @@
     "pages/index/index",
     "pages/aboutUs/aboutUs",
     "pages/index/functions/registerShop",
-    "pages/contactUss/contactUss"
+    "pages/contactUss/contactUss",
+    "pages/registerCompany/registerCompany",
+    "pages/companyType/companyType",
+    "pages/companyShareholder/companyShareholder",
+    "pages/enterpriseType/enterpriseType"
+    
+    
+   
     
   ],
   "window":{
@@ -24,7 +31,7 @@
       "selectedIconPath": "/img/selectHome.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/registerCompany/registerCompany",
         "text": "注册公司",
         "iconPath": "/img/注册公司@2x.png",
         "selectedIconPath": "/img/注册公司（选中状态）@2x.png"

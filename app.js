@@ -101,6 +101,13 @@ App({
     winWidth: 0,
     winHeight: 0,
     cityNow:'',
-    cityNowName:''
+    cityNowName:'',
+    enterpriseType: '请选择企业类型',
+    color: '#CCC',
+    size: 24,
+    companyType: '请选择公司类别',
+    color1: '#CCC',
+    size1: 24,
+    addShareholderIcon:'"https://s14.postimg.org/rc78jmj4h/image.png"',
   }
 })
