@@ -22,7 +22,7 @@
          </view>
        </view>
     </view>
-    <view class='clear'></view>
+    <view class='clear'>  </view>
     <view class='registeredCapital'>
        <view class='title'>注册资本：</view>
        <view class='saveInput'><input type='text'></input>
@@ -78,7 +78,7 @@
 <view class='clear'></view>
 <view class='slicerLine'></view>
 
-
-<button id='submit'>提交审核</button>
-
+<view class='foot'>
+  <button id='submit'>提交审核</button>
+</view>
 </form>
