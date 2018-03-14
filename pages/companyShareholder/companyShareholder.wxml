@@ -22,9 +22,10 @@
        <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
        </view>
     </view>
-     <view>
-        <view class='title'>股东1比例：</view>
+     <view class='proportion'>
+        <view class='title' >股东1比例：</view>
        <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
+       <view class='percent'>%</view>
        </view>
     </view>
      <view>
@@ -33,8 +34,8 @@
        </view>
     </view>
     <view id='IDPhone'>
-       <view id='frontPhone'></view>
-       <view id='contraryPhone'></view>       
+       <view id='frontPhone' bindtap='uploadingImg'></view>
+       <view id='contraryPhone' bindtap='uploadingImg'></view>       
     </view>
 
     <view class='foot'>

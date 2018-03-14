@@ -17,7 +17,10 @@ input{ line-height: 80rpx; height: 80rpx;}
 #IDPhone #frontPhone{ width: 690rpx; height: 450rpx; border: 1px solid #F2F2F2; background: url('https://s14.postimg.org/eomvt94i9/image.png') no-repeat; background-color: #FFF; background-position: 50% 43%; border-bottom: none; }
 #IDPhone #contraryPhone{ width: 690rpx; height: 450rpx; border: 1px solid #F2F2F2; background: url('https://s14.postimg.org/eomvt94i9/image.png') no-repeat; background-color: #FFF; background-position: 50% 43%;}
 .foot{ width: 690rpx; height: 200rpx; margin-bottom: 200rpx; background-color: #FFF; position: relative; margin-top: 4rpx; margin-left: 1rpx;}
-.foot button{ width: 80%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 30rpx; height: 65rpx;  position: absolute; bottom: 20%; left: 10%;}
+.foot button{ width: 80%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 30rpx; height: 65rpx;  position: absolute; bottom: 20%; left: 10%;
+line-height:65rpx;
+}
+
 .navigator-box {
 opacity:0;
 position:relative;
@@ -35,3 +38,6 @@ transform:translateY(0);
 
 }
 
+
+.proportion{ position: relative;}
+.proportion .percent{ position: absolute; top: 0%; right: 5%; font-size: 24rpx; color: #CCC}

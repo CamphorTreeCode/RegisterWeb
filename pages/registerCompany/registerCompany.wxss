@@ -6,12 +6,16 @@ view{ height: 80rpx; line-height: 80rpx; background-color: #FFF}
 input{ line-height: 80rpx; height: 80rpx;}
 #blank{background-color: #F6F9F9; height: 40rpx; }
 .title{ float: left;  text-indent: 0.5rem }
-.remarkName{ height: 180rpx;}
+.remarkName{ height:240rpx;}
+.remarkName .title{ display: block; height: 60rpx;}
+.remarkName .textarea{ overflow: hidden; height: 160rpx;  width:720rpx; padding: 15rpx;}
+.remarkName .textarea textarea{ line-height: 80rpx; height: 160rpx; width:100%;}
 .registeredCapital{ position: relative;}
 .registeredCapital .saveInput{ float: left;}
 .registeredCapital .w{ position: absolute; top: 0%; right: 5%; font-size: 24rpx; color: #CCC}
-#submit{ width: 80%; position: fixed; bottom: 5%; left: 10%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 36rpx;}
+#submit{ width: 80%; position: fixed; bottom: 2%; left: 10%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 36rpx;}
 .pcss{ font-size: 24rpx; color: #CCC; margin-top:3rpx;}
+.ptcss{font-size: 24rpx; color: #CCC; margin-top:30rpx; }
 #chooseType{font-size: 24rpx; color: #CCC;  float: left}
 #bigchooseButton{ width: 80rpx; height: 80rpx; float: right;}
 #chooseButton{font-size: 24rpx; color: #CCC;  height: 30rpx; background-size:cover;  width: 30rpx;
