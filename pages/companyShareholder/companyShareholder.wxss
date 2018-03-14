@@ -1,0 +1,20 @@
+/* pages/companyShareholder/companyShareholder.wxss */
+#blank{background-color: #F6F9F9; height: 40rpx; }
+view{ height: 80rpx; line-height: 80rpx;  background-color: #FFF;}
+page{ font-size:30rpx; color: #333; background-color: #F2F2F2;}
+.clear{ clear: both; height: 0px;}
+#head{ text-indent: 30rpx;}
+.slicerLine{ height: 10rpx; background-color: #F2F2F2;}
+#head .img{ width: 40rpx; height: 40rpx;  margin-top: 20rpx; float: right; background-position:50% 50%; margin-right: 30rpx;  background-size: 210rpx 210rpx; }
+.shareholderList{ display: none;}
+.shareholder .img{ float: left; width: 40rpx; height: 50rpx; margin: 14rpx; background-image: url('https://s14.postimg.org/jxhwr8pj5/image.png');  background-position:50% 48%; margin-left: 45rpx;}
+.shareholder .shareholderName{ float:  right; height: 80rpx; line-height: 80rpx; margin-right: 30rpx;} 
+.title{ float: left;  text-indent: 0.5rem }
+.pcss{ font-size: 24rpx; color: #CCC; margin-top:3rpx;}
+input{ line-height: 80rpx; height: 80rpx;}
+#form{ margin-left: 30rpx; margin-right: 30rpx;}
+#IDPhone{ height: 900rpx;}
+#IDPhone #frontPhone{ width: 690rpx; height: 450rpx; border: 1px solid #F2F2F2; background: url('https://s14.postimg.org/eomvt94i9/image.png') no-repeat; background-color: #FFF; background-position: 50% 43%; border-bottom: none; }
+#IDPhone #contraryPhone{ width: 690rpx; height: 450rpx; border: 1px solid #F2F2F2; background: url('https://s14.postimg.org/eomvt94i9/image.png') no-repeat; background-color: #FFF; background-position: 50% 43%;}
+.foot{ width: 690rpx; height: 200rpx; margin-bottom: 200rpx; background-color: #FFF; position: relative; margin-top: 4rpx; margin-left: 1rpx;}
+.foot button{ width: 80%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 30rpx; height: 65rpx;  position: absolute; bottom: 20%; left: 10%;}

@@ -1,0 +1,19 @@
+<!--pages/enterpriseType/enterpriseType.wxml-->
+<view id='blank'></view>
+<view bindtap='returnRegister' data-value='有限责任公司'>有限责任公司</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='合伙企业'>合伙企业</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='个人独资企业'>个人独资企业</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='股份有限公司'>股份有限公司</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='企业非法人分支机构'>企业非法人分支机构</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='非公司企业合伙人'>非公司企业合伙人</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='分公司'>分公司</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='营业单位'>营业单位</view>
+<view class='slicerLine'></view>
+<view bindtap='returnRegister' data-value='个体工商户'>个体工商户</view>

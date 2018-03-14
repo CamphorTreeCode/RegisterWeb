@@ -1,0 +1,16 @@
+<!--pages/companyType/companyType.wxml-->
+<view id='blank'></view>
+<view class='v1' bindtap='returnRegister' data-value='文化、咨询、服务类公司'><view class='img'></view>文化、咨询、服务类公司</view>
+<view class='slicerLine'></view>
+<view class='v2' bindtap='returnRegister' data-value='贸易类公司'><view class='img'></view>贸易类公司</view>
+<view class='slicerLine'></view>
+<view class='v3' bindtap='returnRegister' data-value='科技类公司'><view class='img'></view>科技类公司</view>
+<view class='slicerLine'></view>
+<view class='v4' bindtap='returnRegister' data-value='工程类公司'><view class='img'></view>工程类公司</view>
+<view class='slicerLine'></view>
+<view class='v5' bindtap='returnRegister' data-value='餐饮类公司'><view class='img'></view>餐饮类公司</view>
+<view class='slicerLine'></view>
+<view class='v6' bindtap='returnRegister' data-value='影视类公司'><view class='img'></view>影视类公司</view>
+<view class='slicerLine'></view>
+<view class='v7' bindtap='returnRegister' data-value='实业类公司'><view class='img'></view>实业类公司</view>
+

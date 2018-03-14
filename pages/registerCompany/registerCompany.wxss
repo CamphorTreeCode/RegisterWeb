@@ -1,0 +1,23 @@
+/* pages/registerCompany/registerCompany.wxss */
+page{ font-size:30rpx; color: #333; background: #F2F2F2;}
+.slicerLine{ height: 10rpx; background-color: #F2F2F2;}
+.clear{ clear: both; height: 0px;}
+view{ height: 80rpx; line-height: 80rpx; background-color: #FFF}
+input{ line-height: 80rpx; height: 80rpx;}
+#blank{background-color: #F6F9F9; height: 40rpx; }
+.title{ float: left;  text-indent: 0.5rem }
+.remarkName{ height: 180rpx;}
+.registeredCapital{ position: relative;}
+.registeredCapital .saveInput{ float: left;}
+.registeredCapital .w{ position: absolute; top: 0%; right: 5%; font-size: 24rpx; color: #CCC}
+#submit{ width: 80%; position: fixed; bottom: 5%; left: 10%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 36rpx;}
+.pcss{ font-size: 24rpx; color: #CCC; margin-top:3rpx;}
+#chooseType{font-size: 24rpx; color: #CCC;  float: left}
+#bigchooseButton{ width: 80rpx; height: 80rpx; float: right;}
+#chooseButton{font-size: 24rpx; color: #CCC;  height: 30rpx; background-size:cover;  width: 30rpx;
+background-image:url('https://s14.postimg.org/veadizwdt/139442326774344506.png');  margin: 25rpx; }
+.companyType{ margin-bottom: 1rpx;}
+.linkman{ margin-bottom: 1rpx;}
+.applyName{ margin-bottom:   1rpx; }
+.enterpriseType{ margin-bottom: 1rpx;}
+

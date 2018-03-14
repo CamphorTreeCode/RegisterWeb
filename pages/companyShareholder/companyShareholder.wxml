@@ -1,0 +1,44 @@
+<!--pages/companyShareholder/companyShareholder.wxml-->
+<view id='blank'></view>
+<view id='head' bindtap='addShareholder' data-value='+'>公司股东<view class='img' style='background-image: url({{addShareholderIcon}});'></view></view>
+<view class='shareholderList' >
+    <view class='slicerLine'></view>
+    <view class='shareholder'><view class='img' style='background:red'>
+    </view><view class='shareholderName'>张三</view></view>
+</view>
+<view id='form'>
+    <view>
+        <view class='title'>股东1姓名：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
+       </view>
+    </view>
+     <view>
+        <view class='title'>股东1电话：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
+       </view>
+    </view>
+     <view>
+        <view class='title'>股东1邮箱：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
+       </view>
+    </view>
+     <view>
+        <view class='title'>股东1比例：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
+       </view>
+    </view>
+     <view>
+        <view class='title'>股东1证件号码：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
+       </view>
+    </view>
+    <view id='IDPhone'>
+       <view id='frontPhone'></view>
+       <view id='contraryPhone'></view>       
+    </view>
+
+    <view class='foot'>
+       <button>完成</button>
+    </view>
+</view>
+

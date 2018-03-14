@@ -1,0 +1,84 @@
+<!--pages/registerCompany/registerCompany.wxml-->
+<view id='blank'></view>
+<form>
+    <view class='applyName'>
+       <view class='title'>申请名称：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入公司名称" placeholder-class='pcss'></input>
+       </view>
+    </view>
+    <view class='remarkName'>
+       <view class='title'>公司备选名称：</view>
+       <view class='textarea'><input  placeholder="请输入公司备选名称，最好两个，最少8个字" placeholder-class='pcss' type='text'></input></view>
+    </view>
+
+<view class='slicerLine'></view>
+<view>
+    <view class='enterpriseType' bindtap='chooseType'>
+       <view class='title'>企业类型：</view>
+       <view class='saveInput'>
+         <view id='chooseType' style='color:{{color}};font-size:{{size}}rpx'>{{enterpriseType}}</view>
+         <view id='bigchooseButton'>
+           <view id='chooseButton'></view>
+         </view>
+       </view>
+    </view>
+    <view class='clear'></view>
+    <view class='registeredCapital'>
+       <view class='title'>注册资本：</view>
+       <view class='saveInput'><input type='text'></input>
+       <view class='w'>万</view>
+       </view>
+    </view>
+</view>
+<view class='clear'></view>
+<view class='slicerLine'></view>
+<view>
+    <view class=''>
+       <view class='title'>经营范围：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入公司范围" placeholder-class='pcss'></input>
+       </view>
+    </view>
+</view>
+<view class='clear'></view>
+<view class='slicerLine'></view>
+<view>
+    <view class='companyType' bindtap='chooseTypec'>
+       <view class='title'>公司类别：</view>
+       <view class='saveInput'>
+         <view id='chooseType' style='color:{{color1}};font-size:{{size1}}rpx'>{{companyType}}</view>
+         <view id='bigchooseButton'>
+           <view id='chooseButton'></view>
+         </view>
+       </view>
+    </view>
+    <view class='companyShareholder' bindtap='companyShareholder'>
+       <view class='title'>公司股东资料：</view>
+       <view class='saveInput'>
+         <view id='chooseType' style='color:{{color1}};font-size:{{size1}}rpx'></view>
+         <view id='bigchooseButton'>
+           <view id='chooseButton'></view>
+         </view>
+       </view>
+    </view>
+</view>
+<view class='clear'></view>
+<view class='slicerLine'></view>
+<view>
+    <view class='linkman'>
+       <view class='title'>联系人：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入联系人姓名" placeholder-class='pcss'></input>
+       </view>
+    </view>
+    <view class=''>
+       <view class='title'>联系方式：</view>
+       <view class='saveInput'><input type='text' placeholder="请输入电话号码" placeholder-class='pcss'></input>
+       </view>
+    </view>
+</view>
+<view class='clear'></view>
+<view class='slicerLine'></view>
+
+
+<button id='submit'>提交审核</button>
+
+</form>
