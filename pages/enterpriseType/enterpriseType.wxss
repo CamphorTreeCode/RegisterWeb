@@ -1,6 +1,11 @@
 /* pages/enterpriseType/enterpriseType.wxss */
-#blank{background-color: #F6F9F9; height: 40rpx; }
-view{ height: 80rpx; line-height: 80rpx; text-align: center; background-color: #FFF;}
+#blank{ height: 40rpx; }
 page{ font-size:30rpx; color: #333; background-color: #F2F2F2;}
-.slicerLine{ height: 10rpx; background-color: #F2F2F2;}
-.foot{ background-color:#F2F2F2; height:370rpx; width: 100%; }
+
+.oneItme{
+height: 80rpx; 
+line-height: 80rpx;
+ text-align: center;
+  background-color: #FFF;
+  margin-top: 1%;
+}
