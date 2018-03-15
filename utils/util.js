@@ -107,6 +107,22 @@ function isIdCard(card){
     return true;
   }
 }
+// 检验电话号
+function IsTelephone(obj)// 正则判断
+{
+  var pattern = /(^[0-9]{3,4}\-[0-9]{3,8}$)|(^[0-9]{3,8}$)|(^\([0-9]{3,4}\)[0-9]{3,8}$)|(^0{0,1}13[0-9]{9}$)/;
+  if (pattern.test(obj)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+// 校验邮箱
+function isEmail(str) {
+  var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+  return reg.test(str);
+}   
 
 //封装api
 function wxApi(){

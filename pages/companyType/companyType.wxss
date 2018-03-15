@@ -1,9 +1,9 @@
 /* pages/companyType/companyType.wxss */
-#blank{background-color: #F6F9F9; height: 40rpx; }
+#blank{ height: 40rpx; background-color: #F2F2F2;}
 view{ height: 80rpx; line-height: 80rpx;  background-color: #FFF;}
 page{ font-size:30rpx; color: #333; background-color: #F2F2F2;}
 .slicerLine{ height: 10rpx; background-color: #F2F2F2;}
-.v1 .img{  float: left; width: 36rpx; height: 36rpx; margin: 22rpx; background-image: url('https://s14.postimg.org/tghy9qeq9/wen1.png'); background-size: cover;}
+.v1 .img{  float: left; width: 36rpx; height: 36rpx; margin: 22rpx; background-image: url('https://s14.postimg.org/tghy9qeq9/wen1.png'); background-size: cover;background: #fff;}
 .v2 .img{  float: left; width: 36rpx; height: 36rpx; margin: 22rpx; background-image: url('https://s14.postimg.org/hrdylsimp/mao2.png'); background-size: cover;}
 .v3 .img{  float: left; width: 36rpx; height: 36rpx; margin: 22rpx; background-image: url('https://s14.postimg.org/t3qk3p9cx/ke3.png'); background-size: cover;}
 .v4 .img{  float: left; width: 36rpx; height: 36rpx; margin: 22rpx; background-image: url('https://s14.postimg.org/i45cs4635/gong4.png'); background-size: cover;}

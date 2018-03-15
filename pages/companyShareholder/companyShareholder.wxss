@@ -1,6 +1,6 @@
 /* pages/companyShareholder/companyShareholder.wxss */
 #blank{background-color: #F6F9F9; height: 40rpx; }
-view{ height: 80rpx; line-height: 80rpx;  background-color: #FFF;}
+view{ line-height: 80rpx;  background-color: #FFF;}
 page{ font-size:30rpx; color: #333; background-color: #F2F2F2;}
 .clear{ clear: both; height: 0px;}
 #head{ text-indent: 30rpx;}
@@ -9,25 +9,89 @@ page{ font-size:30rpx; color: #333; background-color: #F2F2F2;}
 .shareholderList{ display: none;}
 .shareholder .img{ float: left; width: 40rpx; height: 50rpx; margin: 14rpx; background-image: url('https://s14.postimg.org/jxhwr8pj5/image.png');  background-position:50% 48%; margin-left: 45rpx;}
 .shareholder .shareholderName{ float:  right; height: 80rpx; line-height: 80rpx; margin-right: 30rpx;} 
-.title{ float: left;  text-indent: 0.5rem }
+.title{ float: left;  text-indent: 0.5rem  }
 .pcss{ font-size: 24rpx; color: #CCC; margin-top:3rpx;}
-input{ line-height: 80rpx; height: 80rpx;}
+input{ line-height: 80rpx; height: 80rpx;width: 60%;}
 #form{ margin-left: 30rpx; margin-right: 30rpx;}
-#IDPhone{ height: 900rpx;}
-#IDPhone #frontPhone view{ text-indent: 0.5rem;}
-#IDPhone #frontPhone{ position: relative;}
-#IDPhone #frontPhone .deleteImg1{ width: 40rpx; height: 40rpx; position: absolute; top: 5%; right:3%; z-index:1; display: block;}
-#IDPhone #contraryPhone{position: relative;}
-#IDPhone #contraryPhone .deleteImg2{ width: 40rpx; height: 40rpx; position: absolute; top: 5%; right:3%; z-index:1; display: block;}
-#IDPhone #contraryPhone view{ text-indent: 0.5rem;}
-#IDPhone #frontPhone{ width: 690rpx; height: 450rpx; border: 1px solid #F2F2F2; background: url('https://s14.postimg.org/eomvt94i9/image.png') no-repeat; background-color: #FFF; background-position: 50% 43%; border-bottom: none; }
-#IDPhone #frontPhone image{ width: 100%; height: 82%;}
-#IDPhone #contraryPhone{ width: 690rpx; height: 450rpx; border: 1px solid #F2F2F2; background: url('https://s14.postimg.org/eomvt94i9/image.png') no-repeat; background-color: #FFF; background-position: 50% 43%;}
-#IDPhone #contraryPhone image{ width: 100%; height: 82%;}
-.foot{ width: 690rpx; height: 200rpx; margin-bottom: 200rpx; background-color: #FFF; position: relative; margin-top: 4rpx;  border: 1px solid #F2F2F2;}
-.foot button{ width: 80%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 30rpx; height: 65rpx;  position: absolute; bottom: 20%; left: 10%;}
+
+.IDPhone .frontPhone{ position: relative; border-top:1rpx solid #E9E9E9;}
+.IDPhone .frontPhone .deleteImg1{ 
+ width:40rpx;
+height:40rpx;
+position:absolute;
+top:18%;
+right:10%;
+z-index:1;
+
+}
+
+.IDPhone .contraryPhone .deleteImg2{ width: 40rpx; height: 40rpx; position: absolute; top: 5%; right:3%; z-index:1; display: block;}
+.IDPhone .contraryPhone view{ text-indent: 0.5rem;}
+.IDPhone .frontPhone{  height: 400rpx; background-color: #FFF; }
+
+.IDPhone .contraryPhone{ height: 400rpx;}
+.IDPhone .contraryPhone image{ width: 100%; height: 82%;}
+.foot{ width: 690rpx; height: 200rpx;background-color: #FFF; position: relative; margin-top: 4rpx;  border: 1px solid #F2F2F2;}
+.foot button{ width: 80%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 30rpx; height: 65rpx;  position: absolute; bottom: 20%; left: 10%; line-height: 65rpx;}
 .proportion{ position: relative;}
 .proportion .title{ width: 28%;}
 .proportion .saveInput{float: left; width: 67%;}
 .proportion .percent{  position: absolute; top: 0%; right: 3%; font-size: 24rpx; color: #CCC; width:5%;}
 #submit{ line-height: 80rpx; height: 80rpx;}
+
+.navigator-box {
+opacity:0;
+position:relative;
+background-color:#FFFFFF;
+transform:translateY(-3%);
+transition:.5s;
+overflow:hidden;
+
+}
+
+.navigator-box-show {
+opacity:1;
+transform:translateY(0);
+height:auto;
+margin-bottom:200rpx;
+
+
+
+}
+.showHight{
+  height: 0;
+
+}
+.idcard{
+  border-top: 1rpx solid #F2F2F2;
+}
+.cphone{
+
+  width:99%;
+height:77%;
+border:1rpx solid #fff;
+
+}
+.cphone image{
+ width:17%;
+height:37%;
+display:block;
+margin:0 auto;
+margin-top:10.5%;
+
+}
+.showchosImg{
+  width:99%;
+height:77%;
+
+
+}
+.showchosImg image{
+width:80%;
+height:89%;
+display:block;
+margin:0 auto;
+margin-top:2%;
+
+
+}

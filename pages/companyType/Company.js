@@ -1,20 +1,11 @@
-// pages/companyType/companyType.js
-var app = getApp();
+// pages/companyType/Company.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    companyTypes: [
-      { value: "文化、咨询、服务类公司",img:"/img/wenhua@2x.png"},
-      { value: "贸易类公司", img: "/img/maoyi@2x.png" },
-      { value: "科技类公司", img: "/img/keji@2x.png" },
-      { value: "工程类公司", img: "/img/gongcheng@2x.png" },
-      { value: "餐饮类公司", img: "/img/canying@2x.png" },
-      { value: "影视类公司", img: "/img/yings@2x.png" },
-      { value: "实业类公司", img: "/img/shiye@2x.png" }
-    ]
+  
   },
 
   /**
@@ -71,14 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  returnRegister: function (e) {
-    app.globalData.companyType = e.currentTarget.dataset.value;
-    app.globalData.color1 = "#333"
-    app.globalData.size1 = 30
-    console.info('***************' + app.globalData.enterpriseType)
-    wx.navigateBack({
-      delta: 1
-    })
   }
 })
