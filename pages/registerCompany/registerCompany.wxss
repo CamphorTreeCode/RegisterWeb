@@ -11,8 +11,8 @@ input{ line-height: 80rpx; height: 80rpx;}
 .remarkName .textarea{ overflow: hidden; height: 160rpx;  width:720rpx; padding: 15rpx;}
 .remarkName .textarea textarea{ line-height: 80rpx; height: 160rpx; width:100%;}
 .registeredCapital{ position: relative;}
-.registeredCapital .title{ width: 22%;}
-.registeredCapital .saveInput{ float: left; width: 73%;}
+.registeredCapital .title{ width: 23%;}
+.registeredCapital .saveInput{ float: left; width: 72%;}
 .registeredCapital .w{ position: absolute; top: 0%; right: 3%; font-size: 24rpx; color: #CCC; width:5%;}
 .foot{ height: 200rpx; position: relative; background-color: #F2F2F2;}
 #submit{ width: 80%; position:absolute; bottom: 20%; left: 10%; background-color: #1196DB; border-radius:300rpx; color: #FFF; font-size: 36rpx;}

@@ -10,7 +10,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
 	"appid": "wx7264118368e9a2b4",
-	"projectname": "%E6%B3%A8%E5%86%8C%E5%85%AC%E5%8F%B8",
+	"projectname": "213123132321132321",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -26,7 +26,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -61,7 +61,14 @@
 				{
 					"id": -1,
 					"name": "注册公司",
-					"pathName": "pages/registerCompany/registerCompany"
+					"pathName": "pages/registerCompany/registerCompany",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "股东",
+					"pathName": "pages/companyShareholder/companyShareholder",
+					"query": ""
 				}
 			]
 		}

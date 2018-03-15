@@ -79,6 +79,8 @@
 <view class='slicerLine'></view>
 
 
-<button id='submit'>提交审核</button>
+<view class='foot'>
+  <button id='submit'>提交审核</button>
+</view>
 
 </form>
