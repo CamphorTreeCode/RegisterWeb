@@ -3,79 +3,82 @@
 <view id='head' bindtap='addShareholder' data-value='+'>公司股东
   <image class="img" src="{{imggd}}"></image>
 </view>
-<view class='shareholderList'>
-  <view class='slicerLine'></view>
-  <view class='shareholder'>
-    <view class='img' style='background:red'>
-    </view>
-    <view class='shareholderName'>张三</view>
+<view class='shareholderList' wx:for="{{user}}" wx:for-index="idx">
+
+  <view class='shareholder' wx:for="{{user[idx]}}">
+    <image class="img" src="/img/usergd@2x.png"></image>
+    <view class="delateText ri" id="{{idx}}" catchtap='deletaIndex'>删除</view>
+    <view class='shareholderName'>{{item.name}}</view>
+
   </view>
 </view>
-<view id='form' class="navigator-box {{showFrom ? 'navigator-box-show' : 'showHight'}}">
-  <view>
+<view class="commitxx" catchtap='commitxx' hidden='{{user.length>0?false:true}}'>确定提交</view>
+
+<view id='form'>
+  <view class="navigator-box {{showFrom ? 'navigator-box-show' : 'showHight'}}">
     <view>
       <view class='title cl'>股东1姓名：</view>
-      <view class='saveInput'>
-        <input id="name" type='text' value='{{oneList[0].name}}' placeholder="请输入股东姓名" placeholder-class='pcss' bindinput="bindKeyInput" ></input>
+      <view class=' '>
+        <input id="name" type='text' value='{{oneList[0].name}}' placeholder="请输入股东姓名" placeholder-class='pcss' bindinput="bindKeyInput"></input>
       </view>
     </view>
     <view>
       <view class='title cl'>股东1电话：</view>
       <view class='saveInput'>
-        <input id="phone"  type='text' value='{{oneList[0].phone}}' placeholder="请输入股东手机" placeholder-class='pcss' bindinput="bindKeyInput" ></input>
+        <input id="phone" type='number' maxlength="11" value='{{oneList[0].phone}}' placeholder="请输入股东手机" placeholder-class='pcss' bindinput="bindKeyInput"></input>
       </view>
     </view>
     <view>
       <view class='title cl'>股东1邮箱：</view>
       <view class='saveInput'>
-        <input id="email" type='text' value='{{oneList[0].email}}' placeholder="请输入股东邮箱" placeholder-class='pcss' bindinput="bindKeyInput" ></input>
+        <input id="email" type='text' value='{{oneList[0].email}}' placeholder="请输入股东邮箱" placeholder-class='pcss' bindinput="bindKeyInput"></input>
       </view>
     </view>
     <view class='proportion'>
       <view class='title cl'>股东1比例：</view>
       <view class='saveInput'>
-        <input id="proportion" type='text' value='{{oneList[0].proportion}}' placeholder="请输入股东占股比例" placeholder-class='pcss' bindinput="bindKeyInput" ></input>
+        <input id="proportion" type='digit' value='{{oneList[0].holdscale}}' placeholder="请输入股东占股比例" placeholder-class='pcss' bindinput="bindKeyInput"></input>
         <view class='percent'>%</view>
       </view>
     </view>
     <view>
       <view class='title cl'>股东1证件号码：</view>
       <view class='saveInput'>
-        <input id="IDCard" type='text' value='{{oneList[0].IDCard}}' placeholder="请输入股东身份证号" placeholder-class='pcss' bindinput="bindKeyInput" ></input>
+        <input id="IDCard" type='idcard' maxlength="18" value='{{oneList[0].idcard}}' placeholder="请输入股东身份证号" placeholder-class='pcss' bindinput="bindKeyInput"></input>
       </view>
     </view>
     <view>
-      <view class='IDPhone cl idcard' >
+      <view class='IDPhone cl idcard'>
         <view class='frontPhone' bindtap='uploadingImg1'>
-     
+
           <view class="title">股东身份证——正面</view>
 
-          <view class="cphone  cl" hidden='{{oneList[0].justIDCardImg==""?false:true}}'>
-           <image src="/img/paizhao@2x.png"></image>
+          <view class="cphone  cl" hidden='{{oneList[0].idimgZ==""?false:true}}'>
+            <image src="/img/paizhao@2x.png"></image>
           </view>
 
-          <view class="showchosImg cl" hidden='{{oneList[0].justIDCardImg==""?true:false}}'>
-          <image src='{{oneList[0].justIDCardImg}}'></image>
-          <icon type='clear' class='deleteImg1' style='display:{{deleteImg1}}' catchtap='deleteImg1'></icon>
+          <view class="showchosImg cl" hidden='{{oneList[0].idimgZ==""?true:false}}'>
+            <image src='{{oneList[0].idimgZ}}'></image>
+            <icon type='clear' class='deleteImg1' style='display:{{deleteImg1}}' catchtap='deleteImg1'></icon>
           </view>
         </view>
         <view bindtap='uploadingImg2' class="frontPhone cl">
           <view class="title">股东身份证——反面</view>
-          
-          <view class="cphone  cl" hidden='{{oneList[0].backIDCardImg==""?false:true}}'>
-           <image src="/img/paizhao@2x.png"></image>
+
+          <view class="cphone  cl" hidden='{{oneList[0].idimgF==""?false:true}}'>
+            <image src="/img/paizhao@2x.png"></image>
           </view>
-          
-          <view class="showchosImg cl" hidden='{{oneList[0].backIDCardImg==""?true:false}}'>
-          <image src='{{oneList[0].backIDCardImg}}'></image>
-          <icon type='clear' class='deleteImg1' style='display:{{deleteImg2}}' catchtap='deleteImg2'></icon>
-        </view>
+
+          <view class="showchosImg cl" hidden='{{oneList[0].idimgF==""?true:false}}'>
+            <image src='{{oneList[0].idimgF}}'></image>
+            <icon type='clear' class='deleteImg1' style='display:{{deleteImg2}}' catchtap='deleteImg2'></icon>
+          </view>
         </view>
       </view>
     </view>
     <view>
       <view class='foot'>
-        <button  catchtap='commitUser'>完成</button>
+        <button catchtap='commitUser'>完成</button>
       </view>
     </view>
   </view>

@@ -133,5 +133,7 @@ module.exports = {
   wxPromisify: wxPromisify,
   requstGet: requstGet,
   requstPost: requstPost,
-  isIdCard: isIdCard
+  isIdCard: isIdCard,
+  IsTelephone:IsTelephone,
+  isEmail: isEmail
 }

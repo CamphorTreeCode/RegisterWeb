@@ -4,15 +4,30 @@ view{ line-height: 80rpx;  background-color: #FFF;}
 page{ font-size:30rpx; color: #333; background-color: #F2F2F2;}
 .clear{ clear: both; height: 0px;}
 #head{ text-indent: 30rpx;}
-.slicerLine{ height: 10rpx; background-color: #F2F2F2;}
-#head .img{ width: 40rpx; height: 40rpx;  margin-top: 20rpx; float: right; background-position:50% 50%; margin-right: 30rpx;  background-size: 210rpx 210rpx; }
-.shareholderList{ display: none;}
-.shareholder .img{ float: left; width: 40rpx; height: 50rpx; margin: 14rpx; background-image: url('https://s14.postimg.org/jxhwr8pj5/image.png');  background-position:50% 48%; margin-left: 45rpx;}
+
+#head .img{
+width: 40rpx; 
+height: 40rpx;
+margin-top: 20rpx;
+float: right;
+background-position:50% 50%;
+margin-right: 30rpx;
+background-size: 210rpx 210rpx;
+ }
+
+.shareholder .img{ float:left;
+width:48rpx;
+height:40rpx;
+margin-left:45rpx;
+margin-top:2%;
+}
 .shareholder .shareholderName{ float:  right; height: 80rpx; line-height: 80rpx; margin-right: 30rpx;} 
 .title{ float: left;  text-indent: 0.5rem  }
 .pcss{ font-size: 24rpx; color: #CCC; margin-top:3rpx;}
 input{ line-height: 80rpx; height: 80rpx;width: 60%;}
-#form{ margin-left: 30rpx; margin-right: 30rpx;}
+#form{ margin-left: 30rpx; margin-right: 30rpx;top:10%;position:absolute;
+
+}
 
 .IDPhone .frontPhone{ position: relative; border-top:1rpx solid #E9E9E9;}
 .IDPhone .frontPhone .deleteImg1{ 
@@ -94,4 +109,34 @@ margin:0 auto;
 margin-top:2%;
 
 
+}
+.shareholder{
+  background:#fff;
+height:80rpx;
+margin-top:1%;
+
+}
+.delateText{
+height:60%;
+width:12%;
+background:#1196DB;
+text-align:center;
+color:#fff;
+line-height:48rpx;
+margin-top:2%;
+margin-right:3%;
+border-radius:18%;
+
+}
+.commitxx{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #1196DB;
+  color: #ffF;
+  width: 95%;
+  margin:0 auto;
+  margin-top: 10%;
+  border-radius:300rpx;
+font-size: 1rem;
 }
