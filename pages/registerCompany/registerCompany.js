@@ -27,7 +27,8 @@ Page({
         linkman:"",
         linkphone:""
       }
-    ]
+    ],
+
     
   },
 
@@ -54,9 +55,10 @@ Page({
     console.info(app.globalData.size1)
     console.log("user>>>>>>>>", this.data.shareholder)
     var company = this.data.company
+    var shareholder = this.data.shareholder
     company[0].enterprisetype = app.globalData.enterpriseType
     company[0].companytype = app.globalData.companyType
-    company[0].shareholder = this.data.shareholder
+    company[0].shareholder = shareholder
     this.setData({
       color: app.globalData.color,
       size: app.globalData.size,
@@ -152,5 +154,24 @@ Page({
     company: company
   })
 
+  },
+  commitAuditing(){
+    var that  = this;
+    var company = this.data.company 
+   var  companystr = JSON.stringify(company)
+    console.log(companystr)
+    wx.request({
+      url:     'http://shensu.free.ngrok.cc/Maven_Project/company/addCompany', //仅为示例，并非真实的接口地址
+      data: companystr
+      ,
+      method:"put",
+      header: {
+        // 'content-type': 'application/x-www-form-urlencoded' // 默认值
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res)
+      }
+    })
   }
 })

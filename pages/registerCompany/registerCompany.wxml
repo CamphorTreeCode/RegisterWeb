@@ -80,7 +80,7 @@
 
 
 <view class='foot'>
-  <button id='submit'>提交审核</button>
+  <button id='submit' catchtap='commitAuditing'>提交审核</button>
 </view>
 
 </form>

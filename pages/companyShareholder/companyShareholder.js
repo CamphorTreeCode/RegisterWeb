@@ -291,7 +291,7 @@ Page({
 
 
      user.push(
-       oneList
+       oneList[0]
      )
      that.setData({
        user: user,

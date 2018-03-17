@@ -3,11 +3,11 @@
 <view id='head' bindtap='addShareholder' data-value='+'>公司股东
   <image class="img" src="{{imggd}}"></image>
 </view>
-<view class='shareholderList' wx:for="{{user}}" wx:for-index="idx">
+<view class='shareholderList' >
 
-  <view class='shareholder' wx:for="{{user[idx]}}">
+  <view class='shareholder' wx:for="{{user}}">
     <image class="img" src="/img/usergd@2x.png"></image>
-    <view class="delateText ri" id="{{idx}}" catchtap='deletaIndex'>删除</view>
+    <view class="delateText ri" id="{{index}}" catchtap='deletaIndex'>删除</view>
     <view class='shareholderName'>{{item.name}}</view>
 
   </view>
