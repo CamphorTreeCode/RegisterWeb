@@ -31,7 +31,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+  var userstr =   options.user
+  var user = this.data.user
+  user = JSON.parse(userstr)
+  console.log(user);
+  this.setData({
+    user: user
+  })
   },
 
   /**
@@ -187,7 +193,7 @@ Page({
     var oneList = p.data.oneList
     oneList[0].idimgZ = ""
     p.setData({ img1: "", deleteImg1: "none", oneList: oneList})
-
+    
   },
   deleteImg2: function () {
     var p = this
@@ -318,6 +324,13 @@ Page({
        imggd: "/img/add@2x.png",
        showFrom: false
      });
+
+     var pages = getCurrentPages();
+     var prevPage = pages[pages.length - 2]; //上一个页面
+     //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+     prevPage.setData({
+       shareholder: user
+     })
   },
   deletaIndex(e){
     console.log(e)
@@ -339,6 +352,14 @@ Page({
             user: user
 
           })
+     
+          var pages = getCurrentPages();
+          var prevPage = pages[pages.length - 2]; //上一个页面
+          //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+          prevPage.setData({
+            shareholder: user
+          })
+          
         } else if (res.cancel) {
           console.log('用户点击取消')
         }

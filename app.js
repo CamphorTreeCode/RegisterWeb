@@ -40,6 +40,42 @@ App({
     //   }
     // })
     //监听websocket
+
+    // 发送用户的信息
+
+    wx.login({
+      success: function (res) {
+        var jscode = res.code
+    wx.getUserInfo({
+      success: function (res) {
+        var user =  that.globalData.user[0]
+        var userInfo = res.userInfo
+        user.nickname = userInfo.nickName
+        user.avatarurl = userInfo.avatarUrl
+        user.gender = userInfo.gender //性别 0：未知、1：男、2：女
+        user.province = userInfo.province
+        user.city = userInfo.city
+        user.country = userInfo.country
+        user.language = userInfo.language
+        user.jscode = jscode;
+        var users = JSON.stringify(user)
+        wx.request({
+          url: 'http://shensu.free.ngrok.cc/Maven_Project/user/addUser', //仅为示例，并非真实的接口地址
+          data: users,
+          header: {
+            'content-type': 'application/json' // 默认值
+          },
+          method:"post",
+          success: function (res) {
+            console.log(res)
+          }
+        })
+      }
+    })
+    
+    }})
+/**传用户数据 */
+     
     wx.onSocketOpen(function (res) {
       console.log("2",res)
       socketOpen = true
@@ -108,6 +144,19 @@ App({
     companyType: '请选择公司类别',
     color1: '#CCC',
     size1: 24,
+    user:[
+    {
+        avatarurl:'',
+        nickname:'',
+        gender:-1,
+        city:'',
+        province:'',
+        country:'',
+        language:'',
+        jscode:''
+
+    }
+    ],
     addShareholderIcon:'"https://s14.postimg.org/rc78jmj4h/image.png"',
   }
 })

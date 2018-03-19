@@ -25,7 +25,8 @@ Page({
         companytype:'',
         shareholder:[],
         linkman:"",
-        linkphone:""
+        linkphone:"",
+        jscode:''
       }
     ],
 
@@ -116,8 +117,12 @@ Page({
     })
   },
   companyShareholder:function(){
+    var company =  this.data.company[0]
+    var user = company.shareholder;
+    var companystr = JSON.stringify(user)
+    console.log(companystr)
     wx.navigateTo({
-      url: '/pages/companyShareholder/companyShareholder',
+      url: '/pages/companyShareholder/companyShareholder?user='+companystr,
     })
   },
   bindKeyInput(e){
@@ -158,20 +163,40 @@ Page({
   commitAuditing(){
     var that  = this;
     var company = this.data.company 
-   var  companystr = JSON.stringify(company)
-    console.log(companystr)
+
+    
+    wx.login({
+      success: function (res) {
+        // var jscode = res.code
+        company[0].jscode = res.code
+        var companystr = JSON.stringify(company[0])
+        console.log(companystr)
     wx.request({
-      url:     'http://shensu.free.ngrok.cc/Maven_Project/company/addCompany', //仅为示例，并非真实的接口地址
-      data: companystr
-      ,
-      method:"put",
+      url:'http://shensu.free.ngrok.cc/Maven_Project/company/addCompany', //仅为示例，并非真实的接口地址
+      data: companystr,
+      method:"post",
       header: {
         // 'content-type': 'application/x-www-form-urlencoded' // 默认值
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
         console.log(res)
+        if(res.data!=''){
+          wx.showToast({
+            title: res.data,
+            icon: 'success',
+            duration: 2000
+          })
+        }else{
+          wx.showToast({
+            title: "恭喜增加成功!",
+            icon: 'success',
+            duration: 2000
+          })
+        }
+        
       }
     })
+      }})
   }
 })
