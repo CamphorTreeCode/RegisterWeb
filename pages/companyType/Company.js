@@ -1,4 +1,5 @@
 // pages/companyType/Company.js
+var app = getApp()
 Page({
 
   /**

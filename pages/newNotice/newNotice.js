@@ -1,4 +1,5 @@
 // pages/newNotice/newNotice.js
+var app = getApp()
 Page({
 
   /**

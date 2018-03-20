@@ -172,7 +172,7 @@ Page({
         var companystr = JSON.stringify(company[0])
         console.log(companystr)
     wx.request({
-      url:'http://shensu.free.ngrok.cc/Maven_Project/company/addCompany', //仅为示例，并非真实的接口地址
+      url: app.globalData.appUrl+'company/addCompany', //仅为示例，并非真实的接口地址
       data: companystr,
       method:"post",
       header: {

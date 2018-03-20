@@ -1,6 +1,8 @@
  page{
    background: #EEEEEE;
  }
+ swiper {
+   height:185px;}
 /*轮播图  */
 .slide-image {
   height: 100%;

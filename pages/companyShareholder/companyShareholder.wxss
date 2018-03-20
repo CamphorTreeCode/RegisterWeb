@@ -3,8 +3,9 @@
 view{ line-height: 80rpx;  background-color: #FFF;}
 page{ font-size:30rpx; color: #333; background-color: #F2F2F2;}
 .clear{ clear: both; height: 0px;}
-#head{ text-indent: 30rpx;}
-
+#head{ text-indent: 30rpx; 
+}
+  
 #head .img{
 width: 40rpx; 
 height: 40rpx;

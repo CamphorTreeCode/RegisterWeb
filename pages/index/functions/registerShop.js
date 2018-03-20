@@ -1,4 +1,5 @@
 // pages/index/functions/registerShop.js
+var app = getApp()
 Page({
 
   /**
@@ -79,14 +80,14 @@ Page({
      ],
     //  图片地址
      functionImg: [
-       { url:'https://t1.picb.cc/uploads/2018/03/13/224Tdr.jpg'},
-       { url:'https://s14.postimg.org/mi8s6la9d/daili.jpg'},
-       { url:'https://s14.postimg.org/49729mgsx/image.png'},
-       { url:"https://t1.picb.cc/uploads/2018/03/13/224xpF.jpg"},
-       { url:'https://t1.picb.cc/uploads/2018/03/13/224PgM.jpg'},
-       { url: 'https://t1.picb.cc/uploads/2018/03/13/224ss1.jpg' },
-       { url: 'https://t1.picb.cc/uploads/2018/03/13/224U30.jpg' },
-       { url: "https://t1.picb.cc/uploads/2018/03/13/224D6d.jpg" },
+       { url: app.globalData.appImgUrl +'gongshang.jpg'},
+       {url: app.globalData.appImgUrl +'daili.jpg'},
+       { url: app.globalData.appImgUrl + 'dbzz.png'},
+       { url: app.globalData.appImgUrl + 'wangzhan.jpg'},
+       { url: app.globalData.appImgUrl + 'shangbiao.jpg'},
+       { url: app.globalData.appImgUrl + 'xuanchuan.jpg'},
+       { url: app.globalData.appImgUrl + 'xiaochengxu.jpg' },
+       { url: app.globalData.appImgUrl + 'zengzhi.jpg' },
        ],
       //  索引
       indexs:0

@@ -60,7 +60,7 @@ App({
         user.jscode = jscode;
         var users = JSON.stringify(user)
         wx.request({
-          url: 'http://shensu.free.ngrok.cc/Maven_Project/user/addUser', //仅为示例，并非真实的接口地址
+          url: that.globalData.appUrl+'user/addUser', //仅为示例，并非真实的接口地址
           data: users,
           header: {
             'content-type': 'application/json' // 默认值
@@ -157,6 +157,8 @@ App({
 
     }
     ],
-    addShareholderIcon:'"https://s14.postimg.org/rc78jmj4h/image.png"',
+    addShareholderIcon:"https://s14.postimg.org/rc78jmj4h/image.png",
+    appUrl:"https://www.chuanshoucs.com/Maven_Project/",
+    appImgUrl:'https://www.chuanshoucs.com/ImgRegCompany/'
   }
 })

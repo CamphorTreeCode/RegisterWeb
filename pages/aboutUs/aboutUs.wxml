@@ -1,6 +1,6 @@
 <!--pages/aboutUs/aboutUs.wxml-->
 <view class="aboutUsHead">
-  <image class="aboutUsHeadImg" src="https://s14.postimg.org/663sduci9/guanyuwomen.png"></image>
+  <image class="aboutUsHeadImg" src="{{backimg}}"></image>
   <view class="companyDetails">
     <view class="companyImg">
       <image src="{{avatarUrl}}"></image>

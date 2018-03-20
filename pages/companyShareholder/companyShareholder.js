@@ -121,7 +121,7 @@ Page({
         wx.uploadFile({
 
 
-          url: 'http://shensu.free.ngrok.cc/Maven_Project/tool/addImg',
+          url: app.globalData.appUrl+"tool/addImg",
 
           filePath: tempFilePaths,
           name: 'file',
@@ -160,7 +160,7 @@ Page({
         wx.uploadFile({
 
 
-          url: 'http://shensu.free.ngrok.cc/Maven_Project/tool/addImg',
+          url: app.globalData.appUrl+'tool/addImg',
 
           filePath: tempFilePaths,
             name: 'file',
