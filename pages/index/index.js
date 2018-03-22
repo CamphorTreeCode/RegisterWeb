@@ -24,7 +24,8 @@ Page({
       { name: "增值服务", url: "/img/zzfw@2x.png" },
     ],
     //最新公告
-    infoArr:[1,2,3,4]
+    infoArr:[1,2,3,4],
+    swiper:[]
   },
 
   /**
@@ -32,18 +33,38 @@ Page({
    */
   onLoad: function (options) {
     var p=this
+    // 查询公告
     wx.request({
       url: app.globalData.appUrl+'notice/getnewnotice',
-      success: function (res) {
-        for (var i = 0; i < res.data.length;i++){
-          p.data.infoArr[i] = res.data[i].img
-        }
-
+      data:{
+        xcxuser_name:"have"
+      },
+    
+    success: function (res) {
+        console.log(res)
+      p.setData({
+        infoArr:res.data
+      })
         
         console.info(p.data.infoArr)
       }
     })
-    
+    // 查询轮播图
+    wx.request({
+      url: app.globalData.appUrl + 'swiper/selectAll',
+      data: {
+        xcxuser_name: "have"
+      },
+
+      success: function (res) {
+        console.log(res)
+        p.setData({
+          swiper: res.data
+        })
+
+      
+      }
+    })
   },
 
   /**
@@ -104,5 +125,23 @@ Page({
       }) 
 
 
+
+  },
+  noticeDetails(e){
+  console.log(e);
+  var id = e.currentTarget.id
+  // var index = e.currentTarget.dataset.index
+  // var infoArr = this.data.infoArr
+  // console.log(infoArr)
+
+  //   try {
+  //     wx.setStorageSync('infoArr', infoArr[index])
+  //   } catch (e) {
+  //   }
+
+
+  wx.navigateTo({
+    url: '/pages/newNotice/newNotice?id=' + id 
+  }) 
   }
 })

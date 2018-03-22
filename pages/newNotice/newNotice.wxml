@@ -1,21 +1,24 @@
 <!--pages/newNotice/newNotice.wxml-->
+<import src="/wxParse/wxParse.wxml" />
+
 <view class='top'>
-工商注册流程
+{{content.title}}
 </view>
 <view class='label'>
   <view class='type,lf'>原创</view>
-  <view>2017.3.16  9：14</view>
+  <view>{{content.createtime}}</view>
 </view>
 <view class='image'>
  <view class='img'>
-    <image src='/img/zhongjiantu.jpg '></image>
+    <image src='{{content.img}} '></image>
  </view>
  <view class='viewCount'>
-  <image src='/img/yan1.png'></image>1564
+  <image src='/img/yan1.png'></image>{{content.viewcount}}
  </view>
 </view>
 <view class='foot'>
-   <view class='title'>
+
+   <!-- <view class='title'>
     玉先企业的优势：
    </view>
    <view class='context'>
@@ -23,6 +26,6 @@
     2、权威的浓情为你期待你们去玩呢漂亮
     3、权威的浓情为你期待你们去玩呢漂亮
     4、权威的浓情为你期待你们去玩呢漂亮
-   </view>
-
+   </view> -->
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
 </view>

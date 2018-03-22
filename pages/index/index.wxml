@@ -1,7 +1,7 @@
 
   <!--轮播图 start  -->
   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-active-color="#fff">
-    <block wx:for="{{movies}}" wx:for-index="index">
+    <block wx:for="{{swiper}}" wx:for-index="index">
       <swiper-item>
         <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
       </swiper-item>
@@ -28,7 +28,7 @@
     </view>
 
     <view class="InfoImg" >
-       <image src="" wx:for="{{infoArr}}"></image>
+       <image src="{{item.img}}" id="{{item.noticeid}}" wx:for="{{infoArr}}" catchtap='noticeDetails'  data-index = "{{index}}"></image>
     </view>
 </view>
 <!-- 最新公告 end -->

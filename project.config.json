@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
@@ -72,6 +72,12 @@
 					"id": -1,
 					"name": "股东",
 					"pathName": "pages/companyShareholder/companyShareholder",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "公告展示",
+					"pathName": "pages/newNotice/newNotice",
 					"query": ""
 				}
 			]

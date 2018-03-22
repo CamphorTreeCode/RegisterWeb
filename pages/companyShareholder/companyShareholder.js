@@ -256,7 +256,7 @@ Page({
       } else {
         wx.showToast({
           title: '邮箱格式不正确',
-          icon: 'success',
+          icon: 'none',
           duration: 2000
         })
         return;
@@ -269,7 +269,7 @@ Page({
       }else{
         wx.showToast({
           title: '身份证格式不正确',
-          icon: 'success',
+          icon: 'none',
           duration: 2000
         })
         return;
@@ -279,7 +279,7 @@ Page({
       } else {
         wx.showToast({
           title: '股份比例不正确',
-          icon: 'success',
+          icon: 'none',
           duration: 2000
         })
         return;
@@ -288,7 +288,7 @@ Page({
     } else {
       wx.showToast({
         title: '请您完善股东信息',
-        icon: 'success',
+        icon: 'none',
         duration: 2000
       })
       return;

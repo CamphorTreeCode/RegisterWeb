@@ -15,7 +15,7 @@
 //     console.log('收到服务器内容：' + res.data)
 //   })
 // }
-
+var check = require('utils/authorizationCheck.js');
 App({
   
   onLaunch: function () {
@@ -42,38 +42,8 @@ App({
     //监听websocket
 
     // 发送用户的信息
+    check.getLoginCheck(that)
 
-    wx.login({
-      success: function (res) {
-        var jscode = res.code
-    wx.getUserInfo({
-      success: function (res) {
-        var user =  that.globalData.user[0]
-        var userInfo = res.userInfo
-        user.nickname = userInfo.nickName
-        user.avatarurl = userInfo.avatarUrl
-        user.gender = userInfo.gender //性别 0：未知、1：男、2：女
-        user.province = userInfo.province
-        user.city = userInfo.city
-        user.country = userInfo.country
-        user.language = userInfo.language
-        user.jscode = jscode;
-        var users = JSON.stringify(user)
-        wx.request({
-          url: that.globalData.appUrl+'user/addUser', //仅为示例，并非真实的接口地址
-          data: users,
-          header: {
-            'content-type': 'application/json' // 默认值
-          },
-          method:"post",
-          success: function (res) {
-            console.log(res)
-          }
-        })
-      }
-    })
-    
-    }})
 /**传用户数据 */
      
     wx.onSocketOpen(function (res) {
@@ -109,7 +79,7 @@ App({
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (that.userInfoReadyCallback) {
-                that.userInfoReadyCallback(res)
+                 that.userInfoReadyCallback(res)
               }
             }
           })
@@ -157,8 +127,9 @@ App({
 
     }
     ],
-    addShareholderIcon:"https://s14.postimg.org/rc78jmj4h/image.png",
+    addShareholderIcon:"https://s14.postimg.org/rc78jmj4h/image.png", 
     appUrl:"https://www.chuanshoucs.com/Maven_Project/",
     appImgUrl:'https://www.chuanshoucs.com/ImgRegCompany/'
   }
 })
+//www.chuanshoucs.com

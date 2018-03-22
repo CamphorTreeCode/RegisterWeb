@@ -154,6 +154,7 @@ Page({
     case "contactType":
       company[0].linkphone = value
       break;
+      
   }
   that.setData({
     company: company
@@ -177,14 +178,14 @@ Page({
       method:"post",
       header: {
         // 'content-type': 'application/x-www-form-urlencoded' // 默认值
-        'content-type': 'application/json' // 默认值
+       'content-type': 'application/json' // 默认值
       },
       success: function (res) {
         console.log(res)
         if(res.data!=''){
           wx.showToast({
             title: res.data,
-            icon: 'success',
+            icon: 'none',
             duration: 2000
           })
         }else{
