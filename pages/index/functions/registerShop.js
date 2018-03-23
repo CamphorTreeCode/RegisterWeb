@@ -1,5 +1,6 @@
 // pages/index/functions/registerShop.js
 var app = getApp()
+var WxParse = require('../../../wxParse/wxParse.js');
 Page({
 
   /**
@@ -69,7 +70,7 @@ Page({
        {
          title: "其他类", text: ""
        }
-
+      
        ],
       //  增值服务
        [
@@ -90,13 +91,16 @@ Page({
        { url: app.globalData.appImgUrl + 'zengzhi.jpg' },
        ],
       //  索引
-      indexs:0
+      indexs:0,
+      textArr:[]
+      
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that =this
     console.log(options.indexs,options.value)
     this.setData({
       indexs: options.indexs,
@@ -105,6 +109,27 @@ Page({
     wx.setNavigationBarTitle({
       title: options.value
     })
+  
+    wx.request({
+      url: app.globalData.appUrl + 'text/getByType',
+      data: {
+        xcxuser_name: "have",
+        type: parseInt(options.indexs)+1
+      },
+
+      success: function (res) {
+        console.log(res)
+         that.setData({
+        textArr: res.data[0]
+   
+       })
+         var article = res.data[0].context
+
+         WxParse.wxParse('article', 'html', article, that, 5);
+
+      }
+    })
+    
   },
 
   /**

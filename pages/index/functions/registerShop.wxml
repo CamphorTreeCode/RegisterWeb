@@ -1,49 +1,55 @@
 <!--pages/index/functions/registerShop.wxml-->
 <!--图片区域  -->
-<view class="functionImg" >
- <image src="{{functionImg[indexs].url}}">   
- </image>
+<import src="/wxParse/wxParse.wxml" />
+<view class="functionImg">
+  <image src="{{textArr.img==''||textArr.img==null?functionImg[indexs].url:textArr.img}}">
+  </image>
 </view>
 <!--介绍内容  -->
 <view class="functionContent">
- <view class="functionHead">
-  <view class="functionHeadImg lf">
-  <image src="/img/shopRegs.png"></image>
+  <view class="functionHead">
+    <view class="functionHeadImg lf">
+      <image src="/img/shopRegs.png"></image>
+    </view>
+    <view class="functionHeadTitle lf">{{value}}</view>
   </view>
-  <view class="functionHeadTitle lf">{{value}}</view>
- </view>
- <view class="functionInfoContent">
- <view class="contentText" wx:for="{{content[indexs]}}">
- 
-<span class="contextTitle">{{item.title}}</span>
-<text>
+  <view class="functionInfoContent">
+    <block wx:if="{{textArr!=null}}">
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </block>
+    <block wx:else>
+      <view class="contentText" wx:for="{{content[indexs]}}">
+
+        <span class="contextTitle">{{item.title}}</span>
+        <text>
 {{item.text}}
 </text>
 
-</view>
- </view>
+    </view>
+        </block>
+  </view>
 </view>
 <!--联系电话  -->
 <view class="contactNumber">
- <view class="functionHead">
-  <view class="functionHeadImg lf">
-  <image src="/img/phone@2x.png"></image>
-  </view>
+  <view class="functionHead">
+    <view class="functionHeadImg lf">
+      <image src="/img/phone@2x.png"></image>
+    </view>
     <view class="functionHeadTitle lf">联系电话</view>
   </view>
   <view class="contactPhone cl" catchtap='phone'>
-     13524012018
+    13524012018
   </view>
   <!--注意事项  -->
   <view class="warnInfo">
-     <view class="halfLeft lf" ></view>
-     <view class="warnInfoImg lf">
+    <view class="halfLeft lf"></view>
+    <view class="warnInfoImg lf">
       <view class="weiyi">
-    
-       <image class="imgleft lf"src="/img/warn@2x.png"></image>
-    <view class='warnContent lf'>此提示或注意事项</view>
+
+        <image class="imgleft lf" src="/img/warn@2x.png"></image>
+        <view class='warnContent lf'>此提示或注意事项</view>
+      </view>
     </view>
-     </view>
     <view class="halfRight lf"></view>
   </view>
 </view>

@@ -6,14 +6,11 @@
   
 }
 .functionImg image{
-  height:100%;
+height:100%;
 width:104%;
 margin-left:-2%;
-
 }
 .functionContent{
-
-
 
 }
 .contentText{

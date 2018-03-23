@@ -1,5 +1,6 @@
 // pages/aboutUs/aboutUs.js
 var app = getApp()
+var WxParse = require('../../wxParse/wxParse.js');
 Page({
 
   /**
@@ -20,13 +21,30 @@ Page({
         var userInfo = res.userInfo
         var nickName = userInfo.nickName
         var avatarUrl = userInfo.avatarUrl
-        var gender = userInfo.gender //性别 0：未知、1：男、2：女
-        var province = userInfo.province
-        var city = userInfo.city
-        var country = userInfo.country
+
         that.setData({
           avatarUrl: avatarUrl
         })
+      }
+    })
+
+    wx.request({
+      url: app.globalData.appUrl + 'text/getByType',
+      data: {
+        xcxuser_name: "have",
+        type: 9
+      },
+
+      success: function (res) {
+        console.log(res)
+        that.setData({
+          textArr: res.data[0]
+
+        })
+        var article = res.data[0].context
+
+        WxParse.wxParse('article', 'html', article, that, 5);
+
       }
     })
   },

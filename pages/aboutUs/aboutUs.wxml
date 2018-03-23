@@ -1,21 +1,34 @@
 <!--pages/aboutUs/aboutUs.wxml-->
+<import src="/wxParse/wxParse.wxml" />
 <view class="aboutUsHead">
   <image class="aboutUsHeadImg" src="{{backimg}}"></image>
   <view class="companyDetails">
     <view class="companyImg">
       <image src="{{avatarUrl}}"></image>
     </view>
-    <view class='companyName'>玉先注册公司代理记账</view>
+    <view class='companyName'>中小企业一站式服务平台</view>
     <view class='companyEnglishValue'>Registered company,agent bookkeeping</view>
   </view>
 
 </view>
-<view class="companyProfile">
+<view class="companyProfile cl">
   <view class="ProfileImg lf">
     <image src="/img/companyDetails@2x.png"></image>
   </view>
   <view class="companyProfileDetails lf">公司简介</view>
+
 </view>
-<view class="phoneNumber" catchtap='phone'>
+  <view class="textContent cl">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>
+<view class="phoneNumber cl" catchtap='phone'>
 <image src="/img/phoneNumber@2x.png"></image>
+</view>
+<view class="lianxi cl">
+  <view class="lianxiName">
+  技术支持：传手小程序  
+  </view>
+  <view class="lianxiValue">
+  服务热线：021-57630970
+  </view>
 </view>

@@ -17,7 +17,7 @@
   "window":{
   "backgroundTextStyle":"light",
   "navigationBarBackgroundColor": "#1196DB",
-  "navigationBarTitleText": "玉先注册公司代记账",
+  "navigationBarTitleText": "中小企业一站式服务平台",
   "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -33,7 +33,7 @@
       },
       {
         "pagePath": "pages/registerCompany/registerCompany",
-        "text": "注册公司",
+        "text": "一键注册公司",
         "iconPath": "/img/注册公司@2x.png",
         "selectedIconPath": "/img/注册公司（选中状态）@2x.png"
       },
