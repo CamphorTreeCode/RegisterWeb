@@ -132,4 +132,4 @@ App({
     appImgUrl:'https://www.chuanshoucs.com/ImgRegCompany/'
   }
 })
-//www.chuanshoucs.com
+//www.chuanshoucs.com "http://localhost/Maven_Project/",

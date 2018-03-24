@@ -29,6 +29,21 @@ Page({
         jscode:''
       }
     ],
+    // 清空
+    companyss: [
+      {
+        companyname: "",
+        remarkname: '',
+        enterprisetype: '',
+        registeredcapital: '',
+        businessscope: '',
+        companytype: '',
+        shareholder: [],
+        linkman: "",
+        linkphone: "",
+        jscode: ''
+      }
+    ],
 
     
   },
@@ -193,6 +208,10 @@ Page({
             title: "恭喜增加成功!",
             icon: 'success',
             duration: 2000
+          })
+          var companyss = that.data.companyss
+          that.setData({
+            company: companyss
           })
         }
         

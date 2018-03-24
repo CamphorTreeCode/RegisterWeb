@@ -164,6 +164,7 @@ Page({
 
           filePath: tempFilePaths,
             name: 'file',
+       
             header: {
               "Content-Type":
               "multipart/form-data"

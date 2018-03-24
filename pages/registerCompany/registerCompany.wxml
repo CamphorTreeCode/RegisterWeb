@@ -25,7 +25,7 @@
     <view class='clear'></view>
     <view class='registeredCapital'>
        <view class='title'>注册资本：</view>
-       <view class='saveInput'><input bindinput="bindKeyInput" id="capital" type='text'></input>
+       <view class='saveInput'><input bindinput="bindKeyInput" id="capital" type='number'></input>
        <view class='w'>万</view>
        </view>
     </view>

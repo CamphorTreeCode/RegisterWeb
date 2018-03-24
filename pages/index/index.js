@@ -17,7 +17,7 @@ Page({
       { name: "工商注册", url:"/img/gszhuce@2x.png"},
       { name: "代理记账", url:"/img/dailijizhang@2x.png"},
       { name: "代办资质", url: "/img/myMoney@2x.png" },
-      { name: "网站建站", url: "/img/webOpen@2x.png" },
+      { name: "网站建设", url: "/img/webOpen@2x.png" },
       { name: "商标专利", url: "/img/shopLogo@2x.png" },
       { name: "宣传推广", url: "/img/xuanchuantuiguang@2x.png" },
       { name: "小程序开发", url: "/img/xcxkf@2x.png" },
